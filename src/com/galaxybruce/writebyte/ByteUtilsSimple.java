@@ -17,12 +17,9 @@ public class ByteUtilsSimple {
      * @return 两位的字节数组
      */
     public static byte[] shortToByte(short number) {
-        int temp = number;
         byte[] b = new byte[2];
-        for (int i = 0; i < b.length; i++) {
-            b[i] = Integer.valueOf(temp & 0xff).byteValue();// 将最低位保存在最低位
-            temp = temp >> 8; // 向右移8位
-        }
+        b[0] = (byte)((int) number >> 8 & 0xff);
+        b[1] = (byte)((int) number & 0xff);
         return b;
     }
 
