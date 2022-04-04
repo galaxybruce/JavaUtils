@@ -1,4 +1,4 @@
-package com.galaxybruce.parsebyte;
+package com.galaxybruce.parsebyte.m1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
