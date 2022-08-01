@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * @author bruce.zhang
  * @date 2021/6/9 00:51
- * @description 根据协议长度递归解析数据
+ * @description 根据协议长度递归解析byte数据
  * <p>
  * modification history:
  */

@@ -13,7 +13,9 @@ import java.util.concurrent.ThreadFactory;
 /**
  * @date 2022/4/4 09:49
  * @author bruce.zhang
- * @description 参考Smack代码。
+ * @description 循环按照协议读取并解析byte数据
+ *
+ * 参考Smack代码。
  * [XMPPTCPConnection](https://github.com/igniterealtime/Smack/blob/master/smack-tcp/src/main/java/org/jivesoftware/smack/tcp/XMPPTCPConnection.java)
  * <p>
  * modification history:
@@ -30,7 +32,6 @@ class PacketReader {
 	private void init(){
 		done = false;
 		readerThread = new Thread(){
-			
 			public void run() {
 				parsePackets(this);
 			}

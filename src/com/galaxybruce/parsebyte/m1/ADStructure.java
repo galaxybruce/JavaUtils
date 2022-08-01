@@ -3,7 +3,7 @@ package com.galaxybruce.parsebyte.m1;
 /**
  * @author bruce.zhang
  * @date 2021/6/9 00:49
- * @description 解析后的数据
+ * @description 字节数组解析出来的数据模型
  * <p>
  * modification history:
  */
